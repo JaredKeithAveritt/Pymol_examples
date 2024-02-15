@@ -11,8 +11,12 @@
 
 ![Views of Mg(OH)2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/Mg(OH)2/2L_Mg(OH)2.png)  
 
-- [Link to all HIRES files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
+- [Link to all HIRES files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)
+  
+# Graphene
 
+![Views of Graphene](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/graphene/Graphene.png)  
+- [Link to all HIRES files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
 
 ## Structures from Materials Project that was used 
 
