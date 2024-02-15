@@ -20,8 +20,8 @@
 - [MoS2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-2815?formula=MoS2)  
 
 
-
 Using Pymol:
+```
 set orthoscopic, on
 set sphere_scale, 0.2
 show sticks
@@ -33,12 +33,14 @@ run /Users/jarkeith/Desktop/make_Mg_O_bonds.py
 set sphere_scale, 0.21, (element O)
 set sphere_scale, 0.19, (element H)
 set sphere_scale, 0.35, (element Mg)
+set sphere_scale, 0.21, (element S)
+set sphere_scale, 0.35, (element Mo)
+```
 
 ## Code to fix bonds between Mg and O
 
-
-```
-#filename : make_Mg_O_bonds.py
+```python
+# filename: make_Mg_O_bonds.py
 from pymol import cmd
 
 # Adjust the cutoff distance as necessary
@@ -66,39 +68,27 @@ for mg_idx in mg_indices:
 
 cmd.sort()
 cmd.rebuild()
-
 ```
 
 ## Orientations and save files as high res:
+
+```
 orient
 rotate z,90
+draw 12800,12800
 set ray_opaque_background, 0
-ray 12800, 12800  
+set ray_shadows,off  
+ray 12800, 12800
 png ~/Desktop/Mg_O2H2_top.png
 
 orient
 rotate z,90
 rotate x,90.8
+draw 12800,12800
 set ray_opaque_background, 0
-ray 12800, 12800  
+set ray_shadows,off  
+ray 12800, 12800
 png ~/Desktop/Mg_O2H2_side1.png
+```
 
-orient
-rotate z,90
-rotate x,90.8
-rotate y,90
-set ray_opaque_background, 0
-ray 12800, 12800  
-png ~/Desktop/Mg_O2H2_side2.png
 
-set ray_opaque_background, 0
-ray 12800, 12800  
-png ~/Desktop/Mg_O2H2_diag1.png
-
-set ray_opaque_background, 0
-ray 12800, 12800  
-png ~/Desktop/Mg_O2H2_diag2.png
-
-set ray_opaque_background, 0
-ray 12800, 12800  
-png ~/Desktop/Mg_O2H2_diag3.png
