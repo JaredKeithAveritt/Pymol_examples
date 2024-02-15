@@ -1,6 +1,19 @@
-# Mg(OH)2 
 
-## Structure from MP : https://next-gen.materialsproject.org/materials/mp-626143?formula=MgO2H2#summary
+# Mg(OH)2
+
+## Links and Resources
+
+![Views of Mg(OH)2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/2L_Mg(OH)2/2L_Mg(OH)2.pdf)  
+
+
+- [Link to all files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
+
+
+## Structure from Materials Project that was used 
+
+- [Mg(OH)2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-626143?formula=MgO2H2#summary)  
+
+
 
 Using Pymol:
 set orthoscopic, on
