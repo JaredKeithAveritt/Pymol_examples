@@ -25,7 +25,7 @@ from pymol import cmd
 # Adjust the cutoff distance as necessary
 cutoff_distance = 2.5  # in Angstroms
 
-# Replace 'molecule' with the actual name of your molecule object in PyMOL
+# Replace 'POSCAR' with the actual name of the molecule object in PyMOL
 object_name = "POSCAR"  # Adjust this line with your object's name
 
 # Fetch the indices of Mg and O atoms
