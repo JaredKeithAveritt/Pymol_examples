@@ -1,6 +1,6 @@
 # MoS2
 
-![Views of MoS2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/MoS2/MoS2.png)  
+![Views of MoS2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/MoS2/1L_MoS2.png)  
 - [Link to all files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
 
 
