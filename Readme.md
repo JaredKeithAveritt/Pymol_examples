@@ -1,16 +1,23 @@
+# MoS2
+
+![Views of MoS2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/MoS2/MoS2.png)  
+- [Link to all files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
+
+
 
 # Mg(OH)2
 
 ## Links and Resources
 
-![Views of Mg(OH)2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/Mg(OH)2/2L_Mg(OH)2.pdf)  
+![Views of Mg(OH)2](https://github.com/JaredKeithAveritt/Pymol_examples/blob/main/Mg(OH)2/2L_Mg(OH)2.png)  
 
 - [Link to all files on Google Drive](https://drive.google.com/drive/folders/16f-_w0aw-7A-QUvQAzcg7gblBw0ajrcG?usp=sharing)  
 
 
-## Structure from Materials Project that was used 
+## Structures from Materials Project that was used 
 
-- [Mg(OH)2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-626143?formula=MgO2H2#summary)  
+- [Mg(OH)2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-626143?formula=MgO2H2)  
+- [MoS2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-2815?formula=MoS2)  
 
 
 
