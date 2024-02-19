@@ -35,6 +35,7 @@ color orange, element Mg
 color red, element O
 run /Users/jarkeith/Desktop/make_Mg_O_bonds.py
 set sphere_scale, 0.21, (element O)
+
 set sphere_scale, 0.19, (element H)
 set sphere_scale, 0.35, (element Mg)
 set sphere_scale, 0.21, (element S)
@@ -72,6 +73,29 @@ for mg_idx in mg_indices:
 
 cmd.sort()
 cmd.rebuild()
+```
+
+## Code to color atoms based on their index
+
+```python
+from pymol import cmd, stored
+
+# Define a function to color atoms
+def color_atoms_by_index():
+    stored.indices = []
+    # Get all atom indices in the object "molecule_name"
+    cmd.iterate("POSCAR", "stored.indices.append(index)")
+    
+    # Loop through the indices and color based on condition
+    for index in stored.indices:
+        if index <= 140:
+            cmd.color("red", "index %d" % index)
+            cmd.show("sticks", "index %d" % index)
+        else:
+            cmd.color("blue", "index %d" % index)
+
+# Call the function
+color_atoms_by_index()
 ```
 
 ## Orientations and save files as high res:
