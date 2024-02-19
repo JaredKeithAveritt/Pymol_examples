@@ -24,14 +24,41 @@
 - [MoS2 Structure from the Materials Project](https://next-gen.materialsproject.org/materials/mp-2815?formula=MoS2)  
 
 
+
+
+
+
 Using Pymol:
 ```
+cmd.color("red",  "index 157")
+cmd.color("red",  "index 158")
+cmd.color("blue",  "index 141")
+unbond index 168 , index 169
+unbond index 167, index 168
+unbond index 167, index 169
+
+#GA
+unbond index 142 , index 143
+unbond index 141, index 142
+unbond index 141, index 143
+cmd.color("blue",  "index 144")
+
+#GPNO
+cmd.color("blue",  "index 157")
+cmd.color("red",  "index 158")
+cmd.color("white",  "index 167")
+unbond index 167 , index 147
+
+color white, all
 set orthoscopic, on
 set sphere_scale, 0.2
 show sticks
+show spheres
 set stick_radius, 0.11
 color white, element H
 color orange, element Mg
+color gray, element C
+color green, element N
 color red, element O
 run /Users/jarkeith/Desktop/make_Mg_O_bonds.py
 set sphere_scale, 0.21, (element O)
@@ -80,34 +107,40 @@ cmd.rebuild()
 ```python
 from pymol import cmd, stored
 
-# Define a function to color atoms
 def color_atoms_by_index():
     stored.indices = []
-    # Get all atom indices in the object "molecule_name"
+    # Get all atom indices in the object "POSCAR"
     cmd.iterate("POSCAR", "stored.indices.append(index)")
     
-    # Loop through the indices and color based on condition
+    # Loop through the indices and apply conditions
     for index in stored.indices:
         if index <= 140:
-            cmd.color("red", "index %d" % index)
-            cmd.show("sticks", "index %d" % index)
+            cmd.hide("spheres", f"index {index}")
+            cmd.color("gray10", f"index {index}")
+            cmd.set("stick_radius", 0.5, f"index {index}")
         else:
-            cmd.color("blue", "index %d" % index)
+            cmd.show("spheres", f"index {index}")
 
 # Call the function
 color_atoms_by_index()
+
 ```
 
 ## Orientations and save files as high res:
 
 ```
-orient
-rotate z,90
+
 draw 12800,12800
 set ray_opaque_background, 0
 set ray_shadows,off  
 ray 12800, 12800
+png ~/Desktop/GPNO-side.png
+
+
+
 png ~/Desktop/Mg_O2H2_top.png
+
+
 
 orient
 rotate z,90
