@@ -37,6 +37,10 @@ unbond index 168 , index 169
 unbond index 167, index 168
 unbond index 167, index 169
 
+
+#Remove double bonds
+set valence, 0
+
 #GA
 unbond index 142 , index 143
 unbond index 141, index 142
